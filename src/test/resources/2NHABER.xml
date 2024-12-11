@@ -1,0 +1,8 @@
+<suite name = "2NHABER Test Suite" >
+    <parameter name = "browser" value = "chrome"/>
+    <test name = "'2NHABER'">
+        <classes>
+            <class name = "testRunners.Runner"/>
+        </classes>
+    </test>
+</suite>
