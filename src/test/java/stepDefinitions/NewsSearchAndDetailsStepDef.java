@@ -5,7 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import testClases.NewsSearchAndDetails;
+import testClasses.NewsSearchAndDetails;
 import util.DriverFactory;
 
 public class NewsSearchAndDetailsStepDef {
