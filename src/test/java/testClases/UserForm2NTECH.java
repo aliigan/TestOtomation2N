@@ -107,7 +107,7 @@ public class UserForm2NTECH {
     }
 
     public void theFormMustBeSentSuccessfully() {
-        elementHelper.sleep(3000);
+        elementHelper.sleep(5000);
         By successfulMessage = By.xpath("//p[@class='text-[16px] flex justify-start " +
                 "items-start leading-6']");
         String expectedMessage = "Form Başarı ile gönderildi. Katıldığınız için teşekkür ederiz.";
