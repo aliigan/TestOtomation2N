@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.Properties;
 
-public class DriverFactory2nHaber {
+public class DriverFactory {
     static WebDriver driver;
     static Properties properties;
 

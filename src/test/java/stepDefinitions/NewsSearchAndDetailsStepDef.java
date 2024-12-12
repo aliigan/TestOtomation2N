@@ -1,15 +1,22 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import testClases.NewsSearchAndDetails;
-import util.DriverFactory2nHaber;
+import util.DriverFactory;
 
 public class NewsSearchAndDetailsStepDef {
-    WebDriver driver = DriverFactory2nHaber.getDriver();
+    WebDriver driver = DriverFactory.getDriver();
     NewsSearchAndDetails newsSearchAndDetails = new NewsSearchAndDetails(driver);
+
+    @Given("User is on home page")
+    public void userIsOnHomePage() {
+        newsSearchAndDetails.userIsOnHomePage();
+    }
+
     @When("Click to search button")
     public void clickToSearchButton() {
         newsSearchAndDetails.clickToSearchButton();

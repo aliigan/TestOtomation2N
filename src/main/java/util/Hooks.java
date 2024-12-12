@@ -13,12 +13,11 @@ public class Hooks {
     @Before
     public void before(){
         properties = ConfigReader.initializeProperties();
-        driver = DriverFactory2nHaber.initializeDriver();
+        driver = DriverFactory.initializeDriver();
     }
 
     @After
     public  void after(){
-
-//        driver.quit();
+        driver.quit();
     }
 }

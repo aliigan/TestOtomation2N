@@ -5,11 +5,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import testClases.UserForm2NTECH;
-import util.DriverFactory2nHaber;
+import util.DriverFactory;
 
 public class UserForm2NTECHStepDef {
 
-    WebDriver driver = DriverFactory2nHaber.getDriver();
+    WebDriver driver = DriverFactory.getDriver();
     UserForm2NTECH userform = new UserForm2NTECH(driver);
     @When("Write name surname as {string}")
     public void writeNameSurnameAs(String name) {

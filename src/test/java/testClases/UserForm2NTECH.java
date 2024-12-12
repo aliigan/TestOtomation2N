@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.ElementHelper;
 
@@ -59,7 +58,7 @@ public class UserForm2NTECH {
         elementHelper.click(uploadButton);
         elementHelper.sleep(1000);
 
-        //günün sonunda readMe dosyasına buranın değiştirlmesi gerektiği eklenmeli
+//        todo proje localde kaldırılmadan önce dosya pathi güncellenmeli
         String filePath = "C:\\Users\\ahmet\\Desktop\\ornek.pdf";
         WebElement uploadElement = driver.findElement(By.id("cv_field"));
         uploadElement.sendKeys(filePath);

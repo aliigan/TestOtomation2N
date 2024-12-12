@@ -22,6 +22,10 @@ public class NewsSearchAndDetails {
         this.actions = new Actions(driver);
     }
 
+    public void userIsOnHomePage() {
+
+    }
+
     public void clickToSearchButton() {
         By search = By.cssSelector(".e-font-icon-svg.e-fas-search");
         elementHelper.click(search);
